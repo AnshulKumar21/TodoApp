@@ -27,7 +27,8 @@ public class TodoServlet extends HttpServlet {
             out.print("[");
             for (int i = 0; i < todos.size(); i++) {
                 out.print("\"" + todos.get(i) + "\"");
-                if (i < todos.size() - 1) out.print(",");
+                if (i < todos.size() - 1)
+                    out.print(",");
             }
             out.print("]");
 
@@ -56,3 +57,4 @@ public class TodoServlet extends HttpServlet {
         }
     }
 }
+// DevOps demo: small change for Git commit
